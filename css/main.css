@@ -37,6 +37,18 @@ textarea {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 100%;
+  }
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -126,6 +138,13 @@ body {
           align-items: center;
 }
 
+@media screen and (min-width: 0) and (max-width: 480px) {
+  .nav {
+    display: inline-block;
+    padding: 16px 0;
+  }
+}
+
 .nav-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -139,6 +158,12 @@ body {
 
 .nav-list__item:not(:last-child) {
   margin-right: 50px;
+}
+
+@media screen and (min-width: 0) and (max-width: 480px) {
+  .nav-list {
+    display: none;
+  }
 }
 
 .nav-list__link {
@@ -193,7 +218,7 @@ body {
   position: relative;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 0) and (max-width: 480px) {
   .nav-list {
     display: none;
   }
@@ -257,7 +282,7 @@ body {
   height: 16px;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 0) and (max-width: 480px) {
   .nav-contacts {
     display: none;
   }
