@@ -1,10 +1,5 @@
 .container--advantages {
   padding-top: 94px;
-
-  @media screen and (min-width: 480px) {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
 }
 
 
@@ -14,11 +9,7 @@
 
   padding: 0;
   margin: 0;
-  // margin-left: -30px;
-
-  @media screen and (min-width: 480px) {
-    display: block;
-  }
+  margin-left: -30px;
 }
 
 .advantages__title {
@@ -26,10 +17,6 @@
   font-size: 14px;
   line-height: 1.14;
   margin-bottom: 10px;
-
-  @media screen and (min-width: 480px) {
-    text-align: center;
-  }
 }
 
 .advantages__description {
@@ -41,14 +28,8 @@
 
 .advantages__item {
   display: block;
-  // margin-left: 30px;
-  // flex-basis: calc(100% / 4 - 30px);
-
-  @media screen and (min-width: 480px) {
-    &:not(:last-child) {
-      margin-bottom: 30px;
-    }
-  }
+  margin-left: 30px;
+  flex-basis: calc(100% / 4 - 30px);
 }
 
 .icon-container {
@@ -65,4 +46,3 @@
   width: 70px;
   height: 70px;
 }
-

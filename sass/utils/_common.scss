@@ -27,10 +27,14 @@ textarea {
 }
 
 .container {
-  width: 1200px;
-  margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+    
+    
+  }
 }
 
 .visually-hidden {
@@ -66,7 +70,6 @@ h2 {
 
 /////////ЗАГОЛОВКИ СЕКЦИЙ///////////////////////////////////
 .work__title,
-.team__title,
 .clients__title {
   margin-bottom: 50px;
   text-align: center;

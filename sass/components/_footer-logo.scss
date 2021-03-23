@@ -1,8 +1,25 @@
 .footer__logo {
-  display: inline-block;
-  margin-left: 0;
+  // display: inline-block;
+  // margin-left: 0;
 
-  margin-bottom: 20px;
+  // margin-bottom: 20px;
+
+  // @media screen and (min-width: 480px) {
+  //   width: 480px;
+  //   text-align: center;
+    
+    
+  // }
+}
+
+.container-logo {
+  @media screen and (min-width: 480px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
 }
 
 .logo__text--footer {

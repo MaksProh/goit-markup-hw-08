@@ -1,8 +1,6 @@
-
-
-// .container--nav {
-//   display: flex;
-// }
+.container--nav {
+  display: flex;
+}
 
 .nav {
   display: flex;
@@ -74,16 +72,4 @@
 
 .nav-list__item {
   position: relative;
-}
-
-@media screen and (min-width: 480px) {
-  .nav-list {
-    display: none;
-  }
-
-  .nav {
-    display: inline-block;
-    padding: 16px 0;
-  }
-
 }
