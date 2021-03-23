@@ -1,0 +1,39 @@
+
+.filtrs {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 34px;
+}
+
+.filtrs__btn {
+  padding: 6px 22px;
+  border-radius: 4px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--black-text);
+
+  transition: color 250ms var(--timing-function),
+    background-color 250ms var(--timing-function);
+}
+
+.filtrs__btn:hover,
+.filtrs__btn:focus {
+  color: var(--white-text);
+  background-color: var(--blu-text);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+
+.filtrs__btn {
+  background-color: var(--background-btn);
+  font-family: inherit;
+}
+
+.filtrs__item:not(:last-child) {
+  margin-right: 8px;
+}

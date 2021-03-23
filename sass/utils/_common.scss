@@ -1,0 +1,84 @@
+h1 {
+  text-align: center;
+  color: var(--white-text);
+  font-size: 44px;
+  line-height: 1.36;
+  font-weight: 900;
+}
+
+address {
+  font: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  border: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+textarea {
+  resize: none;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+h1,
+h3,
+p,
+h2 {
+  margin: 0;
+}
+
+/////////////////////////ОБЩИЕ СТИЛИ/////////////////////////////////////////
+
+//////////////ЛОГОТИП///////////////
+.logo {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--bold-black);
+}
+
+/////////ЗАГОЛОВКИ СЕКЦИЙ///////////////////////////////////
+.work__title,
+.team__title,
+.clients__title {
+  margin-bottom: 50px;
+  text-align: center;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  color: var(--black-text);
+}
+
+/////////////////НИЖНИЙ БОРДЕР НА СТРАНИЦЕ ПОРТФОЛИО В НАВИГАЦИИ////////////////
+.container-border {
+  border-bottom: 1px solid var(--border-nav-portfolio);
+}

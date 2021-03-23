@@ -1,0 +1,27 @@
+:root {
+  --white-text: #ffffff;
+  --grey-text: #757575;
+  --black-text: #212121;
+  --blu-text: #2196f3;
+  --grey-fone: #2f303a;
+  --white-transparent-text: rgba(255, 255, 255, 0.6);
+  --bold-black: #000000;
+  --background-btn: #f5f4fa;
+  --background-descript: rgba(47, 48, 58, 0.8);
+  --background-hero-next: #c4c4c4;
+  --background-hero: rgba(47, 48, 58, 0.4);
+  --background-advantages: #f5f4fa;
+  --color-link: #afb1b8;
+  --backgrouund-links-footer: rgba(255, 255, 255, 0.1);
+  --color-border-portfolio: #eeeeee;
+  --border-close: rgba(0, 0, 0, 0.1);
+  --background-modal: rgba(0, 0, 0, 0.2);
+  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  --background-project: rgba(33, 150, 243, 0.9);
+  --border-nav-portfolio: #ececec;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  margin: 0;
+}
