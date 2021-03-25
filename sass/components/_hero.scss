@@ -1,31 +1,101 @@
 .hero {
-  width: 1600px;
-  padding: 200px 0;
-  margin: 0 auto;
-  background-image: url(../img/fonhero.jpg),
+  width: 480px;
+  height: 400px;
+  background-image: url(../../img/header/header-480.jpg),
     linear-gradient(
       to left,
       var(--background-hero-next) 40%,
       var(--background-hero)
     );
   background-repeat: no-repeat;
+  background-size: 480px 400px;
   background-position: center;
   background-color: var(--background-hero);
 }
 
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../../img/header/header-960.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    width: 768px;
+    height: 400px;
+    background-size: 768px 400px;
+    background-image: url(../../img/header/header-768.jpg);
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .hero {
+      background-image: url(../../img/header/header-1536.jpg);
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    width: 1600px;
+    height: 600px;
+    padding: 200px 0;
+    margin: 0 auto;
+    background-size: 1600px 600px;
+    background-image: url(../../img/header/header-1600.jpg);
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .hero {
+      background-image: url(../../img/header/header-3200.jpg);
+    }
+  }
+}
+
 .hero__container {
-  width: 1200px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0px 15px;
   text-align: center;
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+    padding: 0;
+  }
 }
 
 .hero__title {
   display: inline-block;
-  margin-bottom: 20px;
-  width: 696px;
-  letter-spacing: 0.06em;
+  font-size: 26px;
+  line-height: 1.61;
   text-transform: uppercase;
+
+  @media screen and (min-width: 480px) {
+    margin-bottom: 30px;
+    width: 360px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 696px;
+    margin-bottom: 20px;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+  }
 }
 
 .hero__button {
