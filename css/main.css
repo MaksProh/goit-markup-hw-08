@@ -330,6 +330,14 @@ body {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .container-tablet {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 .footer {
   background-color: var(--grey-fone);
   padding: 60px 0;
@@ -930,6 +938,18 @@ body {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .team-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-left: -30px;
+    margin-bottom: -30px;
+  }
+}
+
 .team__thumb {
   height: 260px;
 }
@@ -938,6 +958,13 @@ body {
   .team__thumb {
     width: 480px;
     height: 460px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .team__thumb {
+    width: 354px;
+    height: 374px;
   }
 }
 
@@ -970,16 +997,6 @@ body {
   }
 }
 
-.team-list {
-  padding: 0;
-}
-
-@media screen and (min-width: 480px) {
-  .team-list {
-    display: block;
-  }
-}
-
 .team__item {
   text-align: center;
   background: var(--white-text);
@@ -997,10 +1014,40 @@ body {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .team__item {
+    width: 768px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    -ms-flex-preferred-size: calc(100% / 2 - 30px);
+        flex-basis: calc(100% / 2 - 30px);
+  }
+  .team__item:not(:first-child) {
+    margin-top: 0;
+  }
+}
+
 @media screen and (min-width: 480px) {
   .team-box {
     padding: 0;
     margin-top: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .team-box {
+    margin-top: 0;
   }
 }
 
@@ -1051,6 +1098,15 @@ body {
   .clients__item {
     -ms-flex-preferred-size: calc(100% / 2 - 30px);
         flex-basis: calc(100% / 2 - 30px);
+    margin-left: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .clients__item {
+    -ms-flex-preferred-size: calc(100% / 3 - 30px);
+        flex-basis: calc(100% / 3 - 30px);
     margin-left: 30px;
     margin-bottom: 30px;
   }
