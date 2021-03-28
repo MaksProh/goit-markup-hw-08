@@ -1,14 +1,19 @@
 .socials {
   padding: 0;
   margin: 0;
-    // justify-content: space-between;
-
 
   @media screen and (min-width: 480px) {
     display: flex;
     justify-content: center;
     padding-top: 16px;
     padding-bottom: 11px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 0;
+    padding-bottom: 0;
+    justify-content: space-between;
+    width: 206px;
   }
 }
 

@@ -1,10 +1,28 @@
-
 .filtrs {
-  display: flex;
-  justify-content: center;
+  // display: flex;
+  // justify-content: center;
   margin: 0;
   padding: 0;
-  margin-bottom: 34px;
+
+  // margin-bottom: 34px;
+
+  @media screen and (min-width: 480px) {
+    margin-bottom: 40px;
+  }
+}
+
+.container-btn {
+  @media screen and (min-width: 480px) {
+    display: flex;
+
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+
+    & .filtrs__item:not(:last-child) {
+      margin-right: 8px;
+    }
+  }
 }
 
 .filtrs__btn {
@@ -28,12 +46,11 @@
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-
 .filtrs__btn {
   background-color: var(--background-btn);
   font-family: inherit;
 }
 
-.filtrs__item:not(:last-child) {
-  margin-right: 8px;
-}
+// .filtrs__item:not(:last-child) {
+//   margin-right: 8px;
+// }

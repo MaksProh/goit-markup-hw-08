@@ -8,7 +8,12 @@
 
   @media screen and (min-width: 480px) {
     text-align: center;
-    margin-bottom: 60px; 
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    text-align: start;
+    margin-bottom: 0;
   }
 }
 
@@ -29,4 +34,3 @@
 .address--color {
   color: var(--white-text);
 }
-
